@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    width: 100%;
+    display: flex;
+}
+.nav-part1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* background-color: aquamarine; */
+    padding: 50px;
+}
+.nav-part2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* background-color: bisque; */
+    padding: 50px;
+}
+.intro{
+    /* background-color: #dd2929; */
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.mess{
+    height: 67%;
+    font-size: 55px;
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    letter-spacing: -3px;
+    font-weight: 500;
+    word-spacing: 20px;
+}
+.cstu{
+    padding: 40px 65px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.cstu h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    font-weight:600;
+}
+.line{
+    height: 2px;
+    width: 100px;
+    background-color: black;
+}
+.photos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    padding: 40px 60px;
+    gap: 60px;
+}
+.elem{
+    width: 50%;
+}
+.imgs{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(174, 204, 218);
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+#img1{
+    background-image: url(https://im.indiatimes.in/facebook/2018/Jul/yellow_diamond_1_1530425383.jpg?w=1200&h=900&cc=1);
+    
+}
+#img2{
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/b9/4d/fe/b94dfe0c-890b-e416-7608-e6af27b4df3c/8613e025-7f52-43e7-a730-d6aafdf41844_Tablet_1.png/313x0w.webp);
+}
+.bottom{
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 40px 0px;
+}
+.bottom i{
+    padding:14px 33px;
+    font-size:20px;
+    border:2px solid black;
+    border-radius: 50px;
+}
+.bottom i:hover{
+    background-color: black;
+    color: azure;
+}
+.bottom h2{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 560px) {
+    .nav-part1, .nav-part2, .intro, .mess, .cstu, .right, .photos {
+        padding: 10px;
+    }
+
+    .mess {
+        font-size: 24px;
+    }
+
+    .cstu h4, .right {
+        font-size: 14px;
+    }
+
+    .line {
+        width: 40px;
+    }
+
+    .imgs {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    #img1, #img2 {
+        background-size: cover;
+    }
+
+    .bottom i {
+        padding: 8px 16px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+}
